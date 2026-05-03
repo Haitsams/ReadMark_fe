@@ -1,3 +1,4 @@
+
 "use client";
 
 import { useState, useEffect, FormEvent } from "react";
@@ -15,7 +16,8 @@ interface BookmarkInput {
   category: Bookmark["category"];
 }
 
-const API_URL = `${process.env.NEXT_PUBLIC_API_URL}/bookmarks`;
+const BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'https://readmarkbe-production.up.railway.app';
+const API_URL = `${BASE_URL}/bookmarks`;
 
 export default function HomePage() {
   const [bookmarks, setBookmarks] = useState<Bookmark[]>([]);
