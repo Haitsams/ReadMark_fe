@@ -217,7 +217,7 @@ export default function HomePage() {
 
         {/* Footer */}
         <footer className="text-center mt-16 text-black/50 font-bold text-sm">
-          made with 💖 + ☕ — stay curious bestie
+          {"always serving <3!"}
         </footer>
       </div>
     </main>
