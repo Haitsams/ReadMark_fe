@@ -85,27 +85,24 @@ export default function HomePage() {
 
   return (
     <main className="min-h-screen bg-[#FFF8E7] text-black relative overflow-hidden">
-      {/* Background blob neon */}
       <div className="absolute -top-32 -left-32 w-96 h-96 bg-pink-400 rounded-full blur-3xl opacity-40" />
       <div className="absolute top-40 -right-32 w-96 h-96 bg-cyan-300 rounded-full blur-3xl opacity-40" />
       <div className="absolute bottom-0 left-1/3 w-96 h-96 bg-lime-300 rounded-full blur-3xl opacity-40" />
 
       <div className="relative max-w-6xl mx-auto px-4 py-12">
-        {/* Header */}
         <header className="mb-12 text-center">
           <div className="inline-block bg-black text-white px-4 py-1 rounded-full text-xs font-bold tracking-widest mb-4 rotate-[-2deg]">
             ✦ YOUR READING ERA ✦
           </div>
           <h1 className="text-6xl md:text-8xl font-black tracking-tighter">
             Read<span className="text-pink-500">Mark</span>
-            <span className="inline-block animate-bounce">⚡</span>
           </h1>
-          <p className="mt-3 text-lg text-black/70 font-medium">
-            save the bookmarks. live the vibe. no cap. 💅
+          <p className="mt-3 text-lg text-black/65 font-medium">
+            “Books are a uniquely portable magic.” <br />
+            save the bookmarks. live the vibe. no cap!!
           </p>
         </header>
 
-        {/* Form — neo-brutalism style */}
         <section className="bg-white border-4 border-black rounded-3xl p-6 md:p-8 mb-12 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]">
           <h2 className="text-2xl font-black mb-5 flex items-center gap-2">
             <span className="bg-pink-400 px-3 py-1 rounded-lg border-2 border-black">
@@ -142,15 +139,15 @@ export default function HomePage() {
               }
               className="border-2 border-black rounded-xl px-4 py-3 font-medium bg-white focus:outline-none focus:ring-4 focus:ring-lime-300 transition-all"
             >
-              <option value="Artikel">📰 Artikel</option>
-              <option value="Buku">📚 Buku</option>
-              <option value="Video">🎬 Video</option>
+              <option value="Artikel"> Artikel</option>
+              <option value="Buku"> Buku</option>
+              <option value="Video"> Video</option>
             </select>
             <button
               type="submit"
               className="bg-black text-white font-black uppercase tracking-wider rounded-xl px-4 py-3 border-2 border-black hover:bg-pink-500 hover:-translate-y-1 hover:translate-x-[-2px] hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-all"
             >
-              save it ✨
+              save it !!
             </button>
           </form>
         </section>
@@ -174,7 +171,7 @@ export default function HomePage() {
             <p className="font-bold text-lg">loading the vibes... ⏳</p>
           ) : bookmarks.length === 0 ? (
             <div className="bg-white border-4 border-dashed border-black rounded-3xl p-12 text-center">
-              <p className="text-2xl font-black mb-2">it's empty here 🥲</p>
+              <p className="text-2xl font-black mb-2">it's empty here ;(</p>
               <p className="text-black/60">drop your first link di atas!</p>
             </div>
           ) : (
